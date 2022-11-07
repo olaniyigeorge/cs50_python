@@ -3,10 +3,10 @@ def main():
     print(f"Total converted '{convert(emoticon)}'")
 
 def convert(e):
-    happyface= e.replace(":)", "@")
-    print(happyface)
-    sadface= happyface.replace(":(", "#")
-    print(sadface)
+    happyface= e.replace(":)", "🙂")
+    #print(happyface)
+    sadface= happyface.replace(":(", "🙁")
+    #print(sadface)
     return sadface
 
 
