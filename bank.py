@@ -1,9 +1,16 @@
-greeting= input("Type in a greeting: ")
+def main():
+    greeting= input("Type in a greeting: ")
+    print(value(greeting))
 
 
-if greeting.strip()[0:5].lower() == 'hello':
-    print("$0")
-elif greeting.strip()[0].lower() == "h":
-    print("$20")
-else:
-    print("$100")
+def value(greeting):
+    greeting = greeting.strip()
+    if greeting and greeting[0:5].lower() == 'hello':
+        return 0
+    elif greeting and greeting[0].lower() == 'h':
+        return 20
+    else:
+        return 100
+
+if __name__ == "__main__":
+    main()

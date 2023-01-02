@@ -1,16 +1,19 @@
-string= input("Type in a str: ")
+def main():
+    word= input("Type in a word: ")
+    print(shorten(word))
 
-for character in string:
-    if character in ['a', 'e', 'i', 'o', 'u']:
-        continue
-    print(character, end='')
 
-n= int(input())
-if n not in list(range(2, 7)):
-    print(False)
- 
-elif:
 
-print("Not accepted")
+def shorten(word):
+    abbr= ""
+    for _ in word:
+        if _.lower() not in ['a', 'e', 'i', 'o', 'u']:
+            abbr += _
+            
+    
+    return abbr
 
-print("Done")
+
+
+if __name__ == "__main__":
+    main()
